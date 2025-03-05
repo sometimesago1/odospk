@@ -6,8 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Involve', 'sans-serif'],
-        sans: ['Uncage', 'sans-serif'],
+        involve: ['Involve', 'sans-serif'],
+        uncage: ['Uncage', 'sans-serif'],
+      },
+      colors: {
+        'neutral-150': '#F1F1F1',
+        'neutral-750': '#2D2D32',
+        'neutral-850': '#222225'
       }
     },
   },

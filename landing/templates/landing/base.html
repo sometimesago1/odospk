@@ -7,10 +7,110 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <title>Отделение дополнительного образования</title>
   </head>
-  <body class="">
-    <h1 class="font-uncage text-9xl font-medium">assaasfasffasf</h1>
-    {% block content %} {% endblock %}
-
-    <footer></footer>
+  <body class="flex flex-col items-center min-h-screen font-medium bg-neutral-150 font-involve">
+    <header class="w-full bg-neutral-150">
+      <nav class="flex justify-center py-6 leading-none">
+        <div class="container grid grid-cols-12 gap-6">
+          <div class="flex items-center col-span-2">
+            <img src="{% static 'img/logo.svg' %}" alt="">
+            <h1 class="ml-4">Отдел дополнительного образования</h1>
+          </div>
+          <ul class="flex items-center col-span-5 gap-2 ml-4 border-l border-r place-content-center border-r-neutral-200">
+            <li>
+              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="#">О нас</a>
+            </li>
+            <li>
+              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="#">Направления</a>
+            </li>
+            <li>
+              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200">
+                <p>Все курсы</p>
+                <img class="ml-1" src="{% static 'img/icons/arrow-up-right.svg' %}" alt="">
+              </a>
+            </li>
+          </ul>
+          <ul class="flex items-center col-span-3 col-start-10 col-end-13 gap-3">
+            <li class="px-3 border-l border-r border-neutral-200">
+              <a href="#" class="flex items-center gap-2 px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200">
+                <p>Об организации</p>
+                <img src="{% static 'img/icons/chevron-down.svg' %}" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-2 px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200">
+                <p>Войти</p>
+                <img src="{% static 'img/icons/chevron-right.svg' %}" alt="">
+            </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-grow">
+      {% block content %} 
+      
+      {% endblock %}
+    </main>
+    <footer class="flex justify-center w-full">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-6 pb-12 mt-16 justify-self">
+          <div class="col-span-3">
+            <div class="flex items-center gap-3">
+              <img src="{% static 'img/logo.svg' %}" alt="" class="h-12">
+              <h2 class="text-lg leading-none">Отдел дополнительного <br> образования</h2>
+            </div>
+            <div class="mt-6">
+              <h2 class="text-3xl">+7 (3812) 35-67-04</h2>
+              <p class="mt-2 text-base text-neutral-500">Звонок по России</p>
+            </div>
+            <ul class="flex items-center gap-4 mt-6">
+              <li><a href="#"><img src="{% static 'img/icons/socials/vk.svg' %}" alt="vk-icon"></a></li>
+              <li><a href="#"><img src="{% static 'img/icons/socials/ok.svg' %}" alt="ok-icon"></a></li>
+              <li><a href="#"><img src="{% static 'img/icons/socials/whatsapp.svg' %}" alt="whatsapp-icon"></a></li>
+              <li><a href="#"><img src="{% static 'img/icons/socials/telegram.svg' %}" alt="telegram-icon"></a></li>
+            </ul>
+          </div>
+          <div class="col-span-2 col-start-7">
+            <h3 class="ml-2 text-lg">Направления</h3>
+              <ul class="flex flex-col mt-4">
+                <li><a href="#" class="inline-block w-full px-2 py-2 rounded-lg hover:bg-neutral-50 text-neutral-500">Красота и стиль</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 break-words rounded-lg hover:bg-neutral-50 text-neutral-500">Творчество и искусство</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 break-words rounded-lg hover:bg-neutral-50 text-neutral-500">Информационные технологии</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 rounded-lg hover:bg-neutral-50 text-neutral-500">Образование и педагогика</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 rounded-lg hover:bg-neutral-50 text-neutral-500">Рабочие профессии</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 rounded-lg hover:bg-neutral-50 text-neutral-500">Соц. работа и уход</a></li>
+              </ul>
+          </div>
+          <div class="col-span-2 col-start-9">
+            <h3 class="ml-2 text-lg">Об организации</h3>
+              <ul class="flex flex-col mt-4">
+                <li><a href="#" class="inline-block w-full px-2 py-2 rounded-lg hover:bg-neutral-50 text-neutral-500">Как проходит обучение</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 break-words rounded-lg hover:bg-neutral-50 text-neutral-500">Реквизиты</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 break-words rounded-lg hover:bg-neutral-50 text-neutral-500">Контакты</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 rounded-lg hover:bg-neutral-50 text-neutral-500">Лицензия</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 rounded-lg hover:bg-neutral-50 text-neutral-500">Оферта</a></li>
+              </ul>
+          </div>
+          <div class="col-span-2 col-start-11">
+            <h3 class="ml-2 text-lg">Сайт</h3>
+              <ul class="flex flex-col mt-4">
+                <li><a href="#" class="inline-block w-full px-2 py-2 rounded-lg hover:bg-neutral-50 text-neutral-500">Условия использования</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 break-words rounded-lg hover:bg-neutral-50 text-neutral-500">Политика конфиденциальности</a></li>
+                <li><a href="#" class="inline-block w-full px-2 py-2 break-words rounded-lg hover:bg-neutral-50 text-neutral-500">Правообладателям</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="flex items-center justify-between py-6 border-t border-t-neutral-200">
+          <p class="text-sm text-neutral-500">БПОУ ОО “Сибирский Профессиональный Колледж”</p>
+          <p class="text-sm text-neutral-500">Copyright(©) 2000 - 2025. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
