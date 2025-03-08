@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <title>Отделение дополнительного образования</title>
   </head>
-  <body class="flex flex-col items-center min-h-screen font-medium bg-neutral-150 font-involve">
+  <body class="min-h-screen font-medium bg-neutral-150 font-involve text-neutral-850">
     <header class="w-full bg-neutral-150">
       <nav class="flex justify-center py-6 leading-none">
         <div class="container grid grid-cols-12 gap-6">
@@ -52,7 +52,7 @@
         </div>
       </nav>
     </header>
-    <main class="flex-grow">
+    <main class="flex flex-col items-center flex-grow w-full">
       {% block content %} 
       
       {% endblock %}

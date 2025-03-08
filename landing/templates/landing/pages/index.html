@@ -1,4 +1,5 @@
 {% extends 'landing/base.html' %}
+{% load static %}
 
 {% block content %}
     <section class="container">
@@ -6,6 +7,17 @@
         <div class="grid grid-cols-12 gap-6 mt-24">
             <h2 class="order-2 col-span-8 col-start-5 leading-none text-[136px] font-normal font-uncage">Мы делаем учебу <span class="text-blue-600">легче</span></h2>
             <p class="self-end col-span-3 pb-6 text-neutral-500">Мы рады предложить вам разнообразные программы профессионального обучения и дополнительного образования, которые помогут вам получить новые знания и навыки</p>
+        </div>
+    </section>
+    <section class="container mt-32 relative h-[796px] w-full overflow-hidden rounded-5xl">
+        <video class="absolute top-0 left-0 min-w-full min-h-full object-cover z-[-1]" autoplay loop muted playsinline>
+          <source src="{% static 'videos/land_vid.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="relative z-10 flex flex-col items-center justify-between h-full text-neutral-300 bg-opacity-60 p-9 bg-neutral-850">
+            <h2 class="px-4 py-3 text-sm font-medium leading-none bg-neutral-300/40 rounded-xl backdrop-blur-sm">Консультация</h2>
+            <p class="w-2/4 text-center text-7xl text-">Есть вопросы? Поможем решить любой из них</p>
+            <button class="px-6 py-5 leading-none duration-300 hover:bg-neutral-300/60 hover:ease-out bg-neutral-300/40 rounded-2xl backdrop-blur-sm">Оставить заявку</button>
         </div>
     </section>
 {% endblock %}
