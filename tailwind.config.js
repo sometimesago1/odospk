@@ -22,6 +22,9 @@ module.exports = {
         '8xl': '64px',
         '9xl': '72px',
       },
+      fontSize: {
+        '4xxl': '42px'
+      }
     },
   },
   plugins: [],

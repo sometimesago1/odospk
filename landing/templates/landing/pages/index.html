@@ -14,10 +14,21 @@
           <source src="{% static 'videos/land_vid.mp4' %}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <div class="relative z-10 flex flex-col items-center justify-between h-full text-neutral-300 bg-opacity-60 p-9 bg-neutral-850">
+        <div class="relative z-10 flex flex-col items-center justify-between h-full text-neutral-150 bg-opacity-60 p-9 bg-neutral-850">
             <h2 class="px-4 py-3 text-sm font-medium leading-none bg-neutral-300/40 rounded-xl backdrop-blur-sm">Консультация</h2>
-            <p class="w-2/4 text-center text-7xl text-">Есть вопросы? Поможем решить любой из них</p>
+            <p class="w-2/4 text-center text-7xl">Есть вопросы? Поможем решить любой из них</p>
             <button class="px-6 py-5 leading-none duration-300 hover:bg-neutral-300/60 hover:ease-out bg-neutral-300/40 rounded-2xl backdrop-blur-sm">Оставить заявку</button>
         </div>
+    </section>
+    <section class="container mt-32">
+        <div class="grid grid-cols-12 gap-6">
+            <div class="flex flex-col justify-between col-span-3">
+                <h3 class="text-3xl font-uncage">О нас</h3>
+                <p class="text-neutral-500">Все <span class="text-neutral-850">программы реализуются</span> в нашем колледже <span class="text-neutral-850">под руководством опытных наставников</span> с многолетней практикой</p>
+            </div>
+            <p class="col-span-6 col-start-7 leading-none text-4xxl">Мы предлагаем широкий выбор образовательных программ, среди которых вы обязательно найдете то, что подходит 
+                именно вам!</p>
+        </div>
+        <div class="mt-24 slider"></div>
     </section>
 {% endblock %}

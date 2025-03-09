@@ -5,9 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="icon" href="{% static 'img/logo.svg' %}" sizes="28x36" type="image/svg+xml">
     <title>Отделение дополнительного образования</title>
   </head>
-  <body class="min-h-screen font-medium bg-neutral-150 font-involve text-neutral-850">
+  <body class="flex flex-col items-center min-h-screen font-medium bg-neutral-150 font-involve text-neutral-850">
     <header class="w-full bg-neutral-150">
       <nav class="flex justify-center py-6 leading-none">
         <div class="container grid grid-cols-12 gap-6">
@@ -15,24 +16,15 @@
             <img src="{% static 'img/logo.svg' %}" alt="">
             <h1 class="ml-4">Отдел дополнительного образования</h1>
           </div>
-          <ul class="flex items-center col-span-5 gap-2 ml-4 border-l border-r place-content-center border-r-neutral-200">
+          <ul class="flex items-center col-span-4 gap-2 px-4 ml-3 border-l border-r w-fit border-r-neutral-200">
             <li>
-              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="#">О нас</a>
+              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="{% url 'home' %}">Главная</a>
             </li>
             <li>
-              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="#">Направления</a>
+              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="{% url 'directions' %}">Направления</a>
             </li>
             <li>
-              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="#">Отзывы</a>
-            </li>
-            <li>
-              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="#">FAQ</a>
-            </li>
-            <li>
-              <a href="#" class="flex items-center px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200">
-                <p>Все курсы</p>
-                <img class="ml-1" src="{% static 'img/icons/arrow-up-right.svg' %}" alt="">
-              </a>
+              <a class="px-4 py-2 bg-neutral-150 rounded-xl hover:bg-neutral-200" href="{% url 'courses' %}">Все курсы</a>
             </li>
           </ul>
           <ul class="flex items-center col-span-3 col-start-10 col-end-13 gap-3">
