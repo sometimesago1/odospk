@@ -26,13 +26,76 @@
                 <h3 class="text-3xl font-uncage">О нас</h3>
                 <p class="text-neutral-500">Все <span class="text-neutral-850">программы реализуются</span> в нашем колледже <span class="text-neutral-850">под руководством опытных наставников</span> с многолетней практикой</p>
             </div>
-            <p class="col-span-6 col-start-7 leading-none text-4xxl">Мы предлагаем широкий выбор образовательных программ, среди которых вы обязательно найдете то, что подходит 
-                именно вам!</p>
+            <p class="col-span-6 col-start-7 leading-none text-4xxl"><span class="font-normal">Мы предлагаем</span> широкий выбор образовательных программ, <span class="font-normal">среди которых вы обязательно найдете то, что подходит 
+                именно вам!</span></p>
         </div>
         <div class="mt-24 slider__main-gallery">
             <img class="rounded-5xl" src="{% static 'img/photos/slider__item1.png' %}" alt="Slider Image">
-            <img class="rounded-5xl" src="{% static 'img/photos/slider__item2.jpg' %}" alt="Slider Image">
             <img class="rounded-5xl" src="{% static 'img/photos/slider__item3.jpg' %}" alt="Slider Image">
+        </div>
+    </section>
+    <section class="container mt-32">
+        <div class="grid grid-cols-12 gap-6">
+            <h3 class="col-span-2 text-3xl font-uncage">Почему мы</h3>
+            <p class="col-span-6 col-start-7 leading-none text-4xxl"><span class="font-normal">Рассказываем почему</span> мы одни из лучших <span class="font-normal">в сфере дополнительного образования Омской области</span></p>
+        </div>
+        <ul class="grid items-center grid-cols-12 gap-6 mt-24 h-[216px]">
+            <li class="h-full col-span-3 p-6 rounded-3xl bg-neutral-50">
+                <div class="flex items-center gap-3">
+                    <img class="" src="{% static 'img/icons/brain.svg' %}" alt="Icon">
+                    <h3 class="text-2xl font-semibold">Простота</h3>
+                </div>
+                <p class="mt-4 text-lg font-medium leading-6 text-neutral-500">Наши программы созданы таким образом, чтобы не вызывать затруднений у слушателей и быть им интересными</p>
+            </li>
+            <li class="h-full col-span-3 p-6 rounded-3xl bg-neutral-50">
+                <div class="flex items-center gap-3">
+                    <img class="" src="{% static 'img/icons/award.svg' %}" alt="Icon">
+                    <h3 class="text-2xl font-semibold">Качество</h3>
+                </div>
+                <p class="mt-4 text-lg font-medium leading-6 text-neutral-500">Все наши образовательные программы проверены временем и отзывами о высоком качестве наших методик</p>
+            </li>
+            <li class="h-full col-span-3 p-6 rounded-3xl bg-neutral-50">
+                <div class="flex items-center gap-3">
+                    <img class="" src="{% static 'img/icons/ruble.svg' %}" alt="Icon">
+                    <h3 class="text-2xl font-semibold">Стоимость</h3>
+                </div>
+                <p class="mt-4 text-lg font-medium leading-6 text-neutral-500">Для вашего удобства, реализуемые нами программы отличаются возможностью оплаты обучения в рассрочку</p>
+            </li>
+            <li class="h-full col-span-3 p-6 rounded-3xl bg-neutral-50">
+                <div class="flex items-center gap-3">
+                    <img class="" src="{% static 'img/icons/briefcase.svg' %}" alt="Icon">
+                    <h3 class="text-2xl font-semibold">Профессионализм</h3>
+                </div>
+                <p class="mt-4 text-lg font-medium leading-6 text-neutral-500">Опыт наших преподавателей позволит вам стать специалистом по выбранной программе обучения или курсу по вашему запросу</p>
+            </li>
+        </ul>
+        <div class="edu-process__component">
+            <div class="edu-process">
+                <h3 class="edu-process__header">Как проходит <br> обучение</h3>
+                <ul class="edu-process__list">
+                    <li class="edu-process__item edu-process__item-active">
+                        <h4 class="edu-process__item-header">Практические занятия и мастер-классы</h4>
+                        <p class="edu-process__item-text">Наши мастер-классы и практические занятия создают пространство для творческого взаимодействия студентов и преподавателей, где каждый получает возможность освоить новые навыки в реальных условиях</p>
+                    </li>
+                    <li class="edu-process__item">
+                        <h4 class="text-4xl leading-none">Интерактивные лекции и семинары</h4>
+                        <p>Need to generate text</p>
+                    </li>
+                    <li class="edu-process__item">
+                        <h4 class="text-4xl leading-none">Проектная работа и командные задания</h4>
+                        <p>Need to generate text</p>
+                    </li>
+                    <li class="edu-process__item">
+                        <h4 class="text-4xl leading-none">Индивидуальный подход</h4>
+                        <p>Need to generate text</p>
+                    </li>
+                    <li class="edu-process__item">
+                        <h4 class="text-4xl leading-none">Постоянная обратная связь</h4>
+                        <p>Need to generate text</p>
+                    </li>
+                </ul>
+            </div>
+            <img class="edu-process__img" src="{% static 'img/photos/process__item1.png' %}" alt="">
         </div>
     </section>
 {% endblock %}

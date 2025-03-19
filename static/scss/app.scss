@@ -1,0 +1,115 @@
+@import 'slick';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .edu-process {
+        @apply w-full flex flex-col justify-between p-12 bg-neutral-50 rounded-3.5xl;
+
+        &__component {
+            @apply flex gap-6 mt-6;
+        }
+
+        &__header {
+            @apply font-semibold leading-none text-4xxl;
+        }
+
+        &__list {
+            @apply flex flex-col gap-9;
+        }
+
+        &__item {
+            h4 {
+                @apply leading-none text-2.5xl text-neutral-500;
+            }
+
+            p {
+                @apply hidden mt-4 text-neutral-500;
+            }
+
+            &-active {
+                h4 {
+                    @apply text-neutral-850 text-4xl;
+                }
+
+                p {
+                    @apply block;
+                }
+            }
+
+            &:hover {
+                @apply cursor-pointer;
+
+                h4 {
+                    @apply text-neutral-700;
+                }
+            }
+        }
+
+        &__img {
+            @apply w-[968px] h-[960px] rounded-3.5xl;
+        }
+    }
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('/static/fonts/involve/involve-regular.woff2') format('woff2'),
+        url('/static/fonts/involve/involve-regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('/static/fonts/involve/involve-regular.woff2') format('woff2'),
+        url('/static/fonts/involve/involve-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('/static/fonts/involve/involve-medium.woff2') format('woff2'),
+        url('/static/fonts/involve/involve-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('/static/fonts/involve/involve-semibold.woff2') format('woff2'),
+        url('/static/fonts/involve/involve-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncage';
+    src: url('/static/fonts/uncage/UNCAGE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncage';
+    src: url('/static/fonts/uncage/UNCAGE-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Uncage';
+    src: url('/static/fonts/uncage/UNCAGE-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

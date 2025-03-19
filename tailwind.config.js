@@ -15,6 +15,8 @@ module.exports = {
         'neutral-850': '#222225'
       },
       borderRadius: {
+        '3xl': '20px',
+        '3.5xl': '24px',
         '4xl': '32px',
         '5xl': '36px',
         '6xl': '48px',
@@ -23,6 +25,7 @@ module.exports = {
         '9xl': '72px',
       },
       fontSize: {
+        '2.5xl': '28px',
         '4xxl': '42px'
       }
     },
