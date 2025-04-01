@@ -89,7 +89,7 @@
         @apply w-full flex;
 
         &-item {
-            @apply relative mx-3;
+            @apply relative mx-3 bg-neutral-200 rounded-3.5xl;
         }
 
         &-counter {
@@ -101,15 +101,15 @@
         }
 
         &-desc {
-            @apply text-neutral-500 text-base;
+            @apply text-neutral-700 text-base;
         }
 
         &-img {
-            @apply h-[596px] rounded-3.5xl filter grayscale;
+            @apply h-[596px] filter rounded-3.5xl grayscale object-cover;
         }
 
         &-link {
-            @apply p-4 absolute bottom-4 left-4 right-4 bg-neutral-50 bg-opacity-60 rounded-3xl backdrop-blur-sm flex items-center gap-4 hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out;
+            @apply p-4 absolute bottom-4 left-4 right-4 bg-neutral-50 bg-opacity-60 rounded-3xl backdrop-blur-sm flex items-center gap-3 hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out;
         }
 
         &-wrapper {
@@ -142,6 +142,10 @@
             content: url('/static/img/icons/chevron-right.svg');
         }
     }
+}
+
+.focus__fixer {
+    @apply focus:ring-2 focus:ring-blue-600 focus:outline-none
 }
 
 @font-face {

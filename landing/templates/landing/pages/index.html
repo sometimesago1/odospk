@@ -121,49 +121,61 @@
                     </a>
                 </div>
                 <div class="directions__slider-item">
-                    <img class="directions__slider-img" src="{% static 'img/photos/directions/beauty.jpg' %}" alt="">
+                    <img class="directions__slider-img" src="{% static 'img/photos/directions/art.jpg' %}" alt="">
                     <div class="directions__slider-wrapper"></div>
-                    <p class="directions__slider-counter">5 курсов</p>
+                    <p class="directions__slider-counter">3 курса</p>
                     <a href="#" class="directions__slider-link">
                         <div class="directions__slider-link__text">
-                            <h3 class="directions__slider-header">Красота и стиль</h3>
-                            <p class="directions__slider-desc">Востребованные навыки в индустрии красоты</p>
+                            <h3 class="directions__slider-header">Творчество и искусство</h3>
+                            <p class="directions__slider-desc">Раскройте свой творческий потенциал</p>
                         </div>
                         <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
                     </a>
                 </div>
                 <div class="directions__slider-item">
-                    <img class="directions__slider-img" src="{% static 'img/photos/directions/beauty.jpg' %}" alt="">
+                    <img class="directions__slider-img" src="{% static 'img/photos/directions/tech.png' %}" alt="">
                     <div class="directions__slider-wrapper"></div>
-                    <p class="directions__slider-counter">5 курсов</p>
+                    <p class="directions__slider-counter">3 курсов</p>
                     <a href="#" class="directions__slider-link">
                         <div class="directions__slider-link__text">
-                            <h3 class="directions__slider-header">Красота и стиль</h3>
-                            <p class="directions__slider-desc">Востребованные навыки в индустрии красоты</p>
+                            <h3 class="directions__slider-header">Комьютерные технологии</h3>
+                            <p class="directions__slider-desc">Погрузитесь в мир IT и основ работы на компьютере</p>
                         </div>
                         <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
                     </a>
                 </div>
                 <div class="directions__slider-item">
-                    <img class="directions__slider-img" src="{% static 'img/photos/directions/beauty.jpg' %}" alt="">
+                    <img class="directions__slider-img" src="{% static 'img/photos/directions/teaching.png' %}" alt="">
                     <div class="directions__slider-wrapper"></div>
                     <p class="directions__slider-counter">5 курсов</p>
                     <a href="#" class="directions__slider-link">
                         <div class="directions__slider-link__text">
-                            <h3 class="directions__slider-header">Красота и стиль</h3>
-                            <p class="directions__slider-desc">Востребованные навыки в индустрии красоты</p>
+                            <h3 class="directions__slider-header">Педагогика</h3>
+                            <p class="directions__slider-desc">Получите навыки для работы с детьми и подростками</p>
                         </div>
                         <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
                     </a>
                 </div>
                 <div class="directions__slider-item">
-                    <img class="directions__slider-img" src="{% static 'img/photos/directions/beauty.jpg' %}" alt="">
+                    <img class="directions__slider-img" src="{% static 'img/photos/directions/worker.png' %}" alt="">
                     <div class="directions__slider-wrapper"></div>
-                    <p class="directions__slider-counter">5 курсов</p>
+                    <p class="directions__slider-counter">6 курсов</p>
                     <a href="#" class="directions__slider-link">
                         <div class="directions__slider-link__text">
-                            <h3 class="directions__slider-header">Красота и стиль</h3>
-                            <p class="directions__slider-desc">Востребованные навыки в индустрии красоты</p>
+                            <h3 class="directions__slider-header">Рабочие профессии</h3>
+                            <p class="directions__slider-desc">Овладейте рабочими профессиями от шитья до сварочных работ</p>
+                        </div>
+                        <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
+                    </a>
+                </div>
+                <div class="directions__slider-item">
+                    <img class="directions__slider-img" src="{% static 'img/photos/directions/social.png' %}" alt="">
+                    <div class="directions__slider-wrapper"></div>
+                    <p class="directions__slider-counter">2 курса</p>
+                    <a href="#" class="directions__slider-link">
+                        <div class="directions__slider-link__text">
+                            <h3 class="directions__slider-header">Социальная работа</h3>
+                            <p class="directions__slider-desc">Научитесь помогать людям и оказывать поддержку тем, кто в ней нуждается</p>
                         </div>
                         <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
                     </a>
@@ -171,5 +183,154 @@
             </div>
         </div>
         {% include 'landing/components/forms/consult__dark.html' %}
+        <div class="container flex flex-col items-center mt-32">
+            <div class="grid grid-cols-12">
+                <h3 class="font-uncage col-span-2 text-2.5xl text-neutral-150">Отзывы</h3>
+                <p class="col-span-6 col-start-7 font-normal leading-none text-4xxl text-neutral-200">Прочитайте реальные отзывы наших выпускников и <span class="font-medium text-blue-600">убедитесь в эффективности</span> наших курсов</p>
+            </div>
+            <ul class="grid grid-cols-12 gap-6 mt-24">
+                <li class="col-span-3 p-6 rounded-3.5xl bg-neutral-750">
+                    <div class="flex items-center gap-4">
+                        <!-- Temp img implementation -->
+                        <div class="w-16 h-16 rounded-full bg-neutral-850"></div>
+                        <div>
+                            <h4 class="text-xl text-neutral-200">Валерия Иванова</h4>
+                            <p class="mt-1 text-neutral-500">Аэрография</p>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-lg font-normal text-neutral-200">Все занятия построены логично, от простого к сложному. Преподаватель уделял внимание каждому ученику, помогал исправлять ошибки и давал полезные советы. Я научилась правильно работать с аэрографом, смешивать краски и создавать реалистичные эффекты. Теперь я могу применять эти навыки в своей работе по покраске автомобилей. Рекомендую этот курс всем, кто хочет освоить аэрографию!</p>
+                </li>
+                <li class="col-span-3 p-6 rounded-3.5xl bg-neutral-750">
+                    <div class="flex items-center gap-4">
+                        <!-- Temp img implementation -->
+                        <div class="block w-16 h-16 rounded-full min-w-16 min-h-16 bg-neutral-850"></div>
+                        <div>
+                            <h4 class="text-xl text-neutral-200">Милена Лян</h4>
+                            <p class="mt-1 text-neutral-500">Оформление и окрашивание бровей</p>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-lg font-normal text-neutral-200">Проходила курсы по Оформлению и окрашиванию бровей. Все понравилось. Мастер-преподаватель - супер. Отдел доп. образования очень вежливые, все быстро оформили</p>
+                </li>
+                <li class="col-span-3 p-6 rounded-3.5xl bg-neutral-750">
+                    <div class="flex items-center gap-4">
+                        <!-- Temp img implementation -->
+                        <div class="w-16 h-16 rounded-full bg-neutral-850"></div>
+                        <div>
+                            <h4 class="text-xl text-neutral-200">Мария Данийчук</h4>
+                            <p class="mt-1 text-neutral-500">Маникюр и дизайн ногтей</p>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-lg font-normal text-neutral-200">Прошла курсы по "Маникюру и дизайн ногтей". Хороший преподаватель, находит индивидуальный подход. Очень уютный кабинет где хочется все больще и больше работать</p>
+                </li>
+                <li class="col-span-3 p-6 rounded-3.5xl bg-neutral-750">
+                    <div class="flex items-center gap-4">
+                        <!-- Temp img implementation -->
+                        <div class="w-16 h-16 rounded-full bg-neutral-850"></div>
+                        <div>
+                            <h4 class="text-xl text-neutral-200">Мурат Осипов</h4>
+                            <p class="mt-1 text-neutral-500">Аэрография</p>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-lg font-normal text-neutral-200">Я закончил курсы аэрографии. И мне очень понравилось работать в этом. Огромное спасибо отделу и большое спасибо Андрею (Север), он очень хороший. Он все объяснил, показал, и рассказал о разных штуках для работы с аэрогрофом. ОГРОМНОЕ СПАСИБО</p>
+                </li>
+            </ul>
+            <a href="#" class="col-span-12 px-6 py-5 place-self-center w-fit mt-9 bg-neutral-750 rounded-2xl text-neutral-150">Смотреть все</a>
+        </div>
+    </section>
+    <section class="container grid grid-cols-12 mt-16">
+        <div class="sticky col-span-3 h-fit top-16">
+            <h3 class="text-3xl font-uncage">Часто задаваемые вопросы</h3>
+            <p class="mt-6 text-neutral-500">Если вы не найдете нужную информацию, <a href="#" class="underline text-neutral-850">оставьте заявку на консультацию</a></p>
+        </div>
+        <div class="col-span-6 col-start-7">
+            <p class="col-span-6 col-start-7 font-normal leading-none text-4xxl">В этом разделе <span class="font-medium">мы собрали ответы</span> на самые распространенные вопросы</p>
+            <ul class="w-full mt-24 overflow-hidden rounded-lg">
+                <li class="block mb-2 rounded-3xl bg-neutral-50 last:mb-0">
+                    <input type="checkbox" id="faq1" class="sr-only peer">
+                    <label for="faq1" class="flex items-start justify-between w-full p-4 cursor-pointer rounded-3xl">
+                        <div>
+                            <p class="inline-block px-4 py-3 text-sm w-fit bg-neutral-150 rounded-xl text-neutral-500">Вопрос 1</p>
+                            <p class="mt-4 text-2xl font-semibold text-gray-800">Какие курсы вы предлагаете?</p>
+                        </div>
+                        <span class="text-gray-500 transform rotate-transition rotate-icon">
+                            <svg class="block w-12 h-12 py-2 transition-transform duration-300 ease-in-out rounded-full bg-neutral-150 peer-checked:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m6-6H6"></path>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="hidden p-4 transition-all duration-300 ease-in-out peer-checked:block">
+                        <p class="text-gray-700">Мы предлагаем широкий спектр курсов по различным направлениям, включая красоту и стиль, творчество и искусство, информационные технологии, образование и педагогику, рабочие профессии, а также социальную работу и уход. Полный список вы можете найти в разделе "Направления"</p>
+                    </div>
+                </li>
+                <li class="block mb-2 rounded-3xl bg-neutral-50 last:mb-0">
+                    <input type="checkbox" id="faq1" class="sr-only peer">
+                    <label for="faq1" class="flex items-start justify-between w-full p-4 cursor-pointer rounded-3xl">
+                        <div>
+                            <p class="inline-block px-4 py-3 text-sm w-fit bg-neutral-150 rounded-xl text-neutral-500">Вопрос 1</p>
+                            <p class="mt-4 text-2xl font-semibold text-gray-800">Какие курсы вы предлагаете?</p>
+                        </div>
+                        <span class="text-gray-500 transform rotate-transition rotate-icon">
+                            <svg class="block w-12 h-12 py-2 transition-transform duration-300 ease-in-out rounded-full bg-neutral-150 peer-checked:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m6-6H6"></path>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="hidden p-4 transition-all duration-300 ease-in-out peer-checked:block">
+                        <p class="text-gray-700">Мы предлагаем широкий спектр курсов по различным направлениям, включая красоту и стиль, творчество и искусство, информационные технологии, образование и педагогику, рабочие профессии, а также социальную работу и уход. Полный список вы можете найти в разделе "Направления"</p>
+                    </div>
+                </li>
+                <li class="block mb-2 rounded-3xl bg-neutral-50 last:mb-0">
+                    <input type="checkbox" id="faq1" class="sr-only peer">
+                    <label for="faq1" class="flex items-start justify-between w-full p-4 cursor-pointer rounded-3xl">
+                        <div>
+                            <p class="inline-block px-4 py-3 text-sm w-fit bg-neutral-150 rounded-xl text-neutral-500">Вопрос 1</p>
+                            <p class="mt-4 text-2xl font-semibold text-gray-800">Какие курсы вы предлагаете?</p>
+                        </div>
+                        <span class="text-gray-500 transform rotate-transition rotate-icon">
+                            <svg class="block w-12 h-12 py-2 transition-transform duration-300 ease-in-out rounded-full bg-neutral-150 peer-checked:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m6-6H6"></path>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="hidden p-4 transition-all duration-300 ease-in-out peer-checked:block">
+                        <p class="text-gray-700">Мы предлагаем широкий спектр курсов по различным направлениям, включая красоту и стиль, творчество и искусство, информационные технологии, образование и педагогику, рабочие профессии, а также социальную работу и уход. Полный список вы можете найти в разделе "Направления"</p>
+                    </div>
+                </li>
+                <li class="block mb-2 rounded-3xl bg-neutral-50 last:mb-0">
+                    <input type="checkbox" id="faq1" class="sr-only peer">
+                    <label for="faq1" class="flex items-start justify-between w-full p-4 cursor-pointer rounded-3xl">
+                        <div>
+                            <p class="inline-block px-4 py-3 text-sm w-fit bg-neutral-150 rounded-xl text-neutral-500">Вопрос 1</p>
+                            <p class="mt-4 text-2xl font-semibold text-gray-800">Какие курсы вы предлагаете?</p>
+                        </div>
+                        <span class="text-gray-500 transform rotate-transition rotate-icon">
+                            <svg class="block w-12 h-12 py-2 transition-transform duration-300 ease-in-out rounded-full bg-neutral-150 peer-checked:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m6-6H6"></path>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="hidden p-4 transition-all duration-300 ease-in-out peer-checked:block">
+                        <p class="text-gray-700">Мы предлагаем широкий спектр курсов по различным направлениям, включая красоту и стиль, творчество и искусство, информационные технологии, образование и педагогику, рабочие профессии, а также социальную работу и уход. Полный список вы можете найти в разделе "Направления"</p>
+                    </div>
+                </li>
+                <li class="block mb-2 rounded-3xl bg-neutral-50 last:mb-0">
+                    <input type="checkbox" id="faq1" class="sr-only peer">
+                    <label for="faq1" class="flex items-start justify-between w-full p-4 cursor-pointer rounded-3xl">
+                        <div>
+                            <p class="inline-block px-4 py-3 text-sm w-fit bg-neutral-150 rounded-xl text-neutral-500">Вопрос 1</p>
+                            <p class="mt-4 text-2xl font-semibold text-gray-800">Какие курсы вы предлагаете?</p>
+                        </div>
+                        <span class="text-gray-500 transform rotate-transition rotate-icon">
+                            <svg class="block w-12 h-12 py-2 transition-transform duration-300 ease-in-out rounded-full bg-neutral-150 peer-checked:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m6-6H6"></path>
+                            </svg>
+                        </span>
+                    </label>
+                    <div class="hidden p-4 transition-all duration-300 ease-in-out peer-checked:block">
+                        <p class="text-gray-700">Мы предлагаем широкий спектр курсов по различным направлениям, включая красоту и стиль, творчество и искусство, информационные технологии, образование и педагогику, рабочие профессии, а также социальную работу и уход. Полный список вы можете найти в разделе "Направления"</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 {% endblock %}

@@ -8,7 +8,7 @@ class ConsultationForm(forms.Form):
         widget = forms.TextInput(
             attrs={
                 'placeholder':'Иван', 
-                'class':'bg-neutral-850 px-6 py-6 font-medium rounded-2xl mt-4 text-base leading-none focus__fixer',
+                'class':'focus__fixer bg-neutral-850 px-6 py-6 text-neutral-150 font-medium rounded-2xl mt-4 text-base leading-none',
                 'id':'customer_name',
             }
         )
@@ -21,7 +21,7 @@ class ConsultationForm(forms.Form):
         widget=forms.TextInput(
             attrs={
                 'placeholder':'+7 999 999 99 99', 
-                'class': 'bg-neutral-850 px-6 py-6 font-medium rounded-2xl mt-4 text-base leading-none focus__fixer',
+                'class': 'focus__fixer bg-neutral-850 px-6 py-6 text-neutral-150 font-medium rounded-2xl mt-4 text-base leading-none',
                 'id':'customer_phone',
             }
         )
