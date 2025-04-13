@@ -2,5 +2,96 @@
 {% load static %}
 
 {% block content %}
-
+    <section class="container">
+        <ul class="flex col-span-12 gap-3 mt-2">
+            <li class="flex items-center gap-2">
+                <a class="text-neutral-400" href="#">Главная</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </li>
+            <li>
+                <a href="#">Направления</a>
+            </li>
+        </ul>
+        <div class="grid grid-cols-12 gap-6 mt-9">
+            <h2 class="font-uncage leading-none font-medium col-span-2 text-2.5xl">Все направления</h2>
+            <p class="col-span-6 col-start-7 font-normal leading-none text-4xxl">Сгруппировали <span class="font-medium text-blue-600">наши курсы по направлениям</span>, чтобы вам было проще найти то, что нужно на самом деле</p>
+        </div>
+        <ul class="grid grid-cols-12 gap-6 mt-24 rows-2">
+            <li class="relative col-span-3 rounded-3.5xl row-span-1 row-start-1 h-[596px]">
+                <img class="object-cover grayscale" src="{% static 'img/photos/directions/beauty.jpg' %}" alt="">
+                <div class="absolute top-0 left-0 w-full h-full bg-neutral-850 bg-opacity-15 rounded-3.5xl"></div>
+                <p class="absolute px-3 py-2 text-sm bg-opacity-50 rounded-xl bg-neutral-50 backdrop-blur-sm w-fit top-4 left-4 hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">5 курсов</p>
+                <a href="#" class="absolute flex items-center gap-3 p-4 bottom-4 left-4 right-4 bg-neutral-50 bg-opacity-60 rounded-3xl backdrop-blur-sm hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-neutral-850">Красота и стиль</h3>
+                        <p class="text-base text-neutral-700">Востребованные навыки в индустрии красоты</p>
+                    </div>
+                    <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
+                </a>
+            </li>
+            <li class="relative col-span-3 rounded-3.5xl row-span-1 row-start-1 h-[596px]">
+                <img class="rounded-3.5xl grayscale object-cover" src="{% static 'img/photos/directions/art.jpg' %}" alt="">
+                <div class="absolute top-0 left-0 w-full h-full bg-neutral-850 bg-opacity-15 rounded-3.5xl"></div>
+                <p class="absolute px-3 py-2 text-sm bg-opacity-50 rounded-xl bg-neutral-50 backdrop-blur-sm w-fit top-4 left-4 hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">3 курса</p>
+                <a href="#" class="absolute flex items-center gap-3 p-4 bottom-4 left-4 right-4 bg-neutral-50 bg-opacity-60 rounded-3xl backdrop-blur-sm hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-neutral-850">Творчество и искусство</h3>
+                        <p class="text-base text-neutral-700">Раскройте свой творческий потенциал</p>
+                    </div>
+                    <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
+                </a>
+            </li>
+            <li class="relative col-span-3 rounded-3.5xl row-span-1 row-start-1 h-[596px]">
+                <img class="grayscale rounded-3.5xl object-cover" src="{% static 'img/photos/directions/tech.png' %}" alt="">
+                <div class="absolute top-0 left-0 w-full h-full bg-neutral-850 bg-opacity-15 rounded-3.5xl"></div>
+                <p class="absolute px-3 py-2 text-sm bg-opacity-50 rounded-xl bg-neutral-50 backdrop-blur-sm w-fit top-4 left-4 hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">3 курса</p>
+                <a href="#" class="absolute flex items-center gap-3 p-4 bottom-4 left-4 right-4 bg-neutral-50 bg-opacity-60 rounded-3xl backdrop-blur-sm hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-neutral-850">Комьютерные технологии</h3>
+                        <p class="text-base text-neutral-700">Погрузитесь в мир IT и основ работы на компьютере</p>
+                    </div>
+                    <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
+                </a>
+            </li>
+            <li class="relative col-span-3 rounded-3.5xl row-span-1 row-start-1 h-[596px]">
+                <img class="grayscale rounded-3.5xl object-cover" src="{% static 'img/photos/directions/teaching.png' %}" alt="">
+                <div class="absolute top-0 left-0 w-full h-full bg-neutral-850 bg-opacity-15 rounded-3.5xl"></div>
+                <p class="absolute px-3 py-2 text-sm bg-opacity-50 rounded-xl bg-neutral-50 backdrop-blur-sm w-fit top-4 left-4 hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">5 курсов</p>
+                <a href="#" class="absolute flex items-center gap-3 p-4 bottom-4 left-4 right-4 bg-neutral-50 bg-opacity-60 rounded-3xl backdrop-blur-sm hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-neutral-850">Педагогика</h3>
+                        <p class="text-base text-neutral-700">Получите навыки для работы с детьми и подростками</p>
+                    </div>
+                    <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
+                </a>
+            </li>
+            <li class="relative col-span-3 rounded-3.5xl row-start-2 row-span-1 h-[596px]">
+                <img class="grayscale rounded-3.5xl object-cover" src="{% static 'img/photos/directions/worker.png' %}" alt="">
+                <div class="absolute top-0 left-0 w-full h-full bg-neutral-850 bg-opacity-15 rounded-3.5xl"></div>
+                <p class="absolute px-3 py-2 text-sm bg-opacity-50 rounded-xl bg-neutral-50 backdrop-blur-sm w-fit top-4 left-4 hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">6 курсов</p>
+                <a href="#" class="absolute flex items-center gap-3 p-4 bottom-4 left-4 right-4 bg-neutral-50 bg-opacity-60 rounded-3xl backdrop-blur-sm hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-neutral-850">Рабочие профессии</h3>
+                        <p class="text-base text-neutral-700">Овладейте рабочими профессиями от шитья до сварочных работ</p>
+                    </div>
+                    <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
+                </a>
+            </li>
+            <li class="relative col-span-3 rounded-3.5xl row-start-2 row-span-1 h-[596px]">
+                <img class="grayscale rounded-3.5xl object-cover" src="{% static 'img/photos/directions/social.png' %}" alt="">
+                <div class="absolute top-0 left-0 w-full h-full bg-neutral-850 bg-opacity-15 rounded-3.5xl"></div>
+                <p class="absolute px-3 py-2 text-sm bg-opacity-50 rounded-xl bg-neutral-50 backdrop-blur-sm w-fit top-4 left-4 hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">2 курса</p>
+                <a href="#" class="absolute flex items-center gap-3 p-4 bottom-4 left-4 right-4 bg-neutral-50 bg-opacity-60 rounded-3xl backdrop-blur-sm hover:backdrop-blur-lg hover:transition hover:duration-300 hover:ease-out">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold text-neutral-850">Социальная работа</h3>
+                        <p class="text-base text-neutral-700">Научитесь помогать людям и оказывать поддержку тем, кто в ней нуждается</p>
+                    </div>
+                    <img src="{% static 'img/icons/direction-link.svg' %}" alt="#">
+                </a>
+            </li>
+            {% include 'landing/components/forms/consult.html' %}
+        </ul>
+    </section>
 {% endblock %}
