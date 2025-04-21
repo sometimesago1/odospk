@@ -3,17 +3,7 @@
 
 {% block content %}
     <section class="container">
-        <ul class="flex col-span-12 gap-3 mt-2">
-            <li class="flex items-center gap-2">
-                <a class="text-neutral-400" href="#">Главная</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.5 15L12.5 10L7.5 5" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </li>
-            <li>
-                <a href="#">Направления</a>
-            </li>
-        </ul>
+        {% include 'landing/components/breadcrumbs/breadcrumbs.html' %}
         <div class="grid grid-cols-12 gap-6 mt-9">
             <h2 class="font-uncage leading-none font-medium col-span-2 text-2.5xl">Все направления</h2>
             <p class="col-span-6 col-start-7 font-normal leading-none text-4xxl">Сгруппировали <span class="font-medium text-blue-600">наши курсы по направлениям</span>, чтобы вам было проще найти то, что нужно на самом деле</p>

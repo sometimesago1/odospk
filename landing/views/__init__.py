@@ -3,10 +3,12 @@
 from .HomePage import HomePage
 from .DirectionsPage import DirectionsPage
 from .CoursesPage import CoursesPage
+from .CoursePage import CoursePage
 
 #List all imported views to send them to urls.py
 __all__ = [
     'HomePage',
     'DirectionsPage',
-    'CoursesPage'
+    'CoursesPage',
+    'CoursePage'
 ]
